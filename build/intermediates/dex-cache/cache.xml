@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Archana\AndroidStudioProjects\TransportApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d5f47f31f53d44ee7acf594dcd4ab8e890eadd3a">
+        <dex dex="C:\Users\Archana\AndroidStudioProjects\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e29909f2af1e0ea24ee24cd5697f5707e52d3ebf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Archana\AndroidStudioProjects\TransportApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Archana\AndroidStudioProjects\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7e9f111bb9bea667d878d077cce907ec8c204800\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Archana\AndroidStudioProjects\TransportApp\app\libs\PGSDK_V2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ac7573d38f31559f8f027eb698769d3ebad40b64">
+        <dex dex="C:\Users\Archana\AndroidStudioProjects\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\2\PGSDK_V2.0_58c23628378c861a0ab4af7ef516764f2a7c3235\classes.dex" />
+    </item>
+
+</items>

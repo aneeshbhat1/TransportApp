@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center|fill"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/account_chip_bg"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <ImageView
+            android:id="@+id/account_picture"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="false"
+            android:scaleType="center"
+            android:src="@drawable/default_photo" />
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="first"
+                android:padding="3dip" />
+            <TextView
+                android:text="second"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="third"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="first"
+                android:padding="3dip" />
+            <TextView
+                android:text="second"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="third"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/ReferLabel"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
