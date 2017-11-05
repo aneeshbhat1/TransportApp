@@ -35,7 +35,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Marker mLocationMarker;
     Location mLastLocation;
     LocationRequest mLocationRequest;
-    public static final String SERVER_ADDRESS = "http://192.168.1.5:80/api/TransportApp/";
+    public static final String SERVER_ADDRESS = "http://192.168.1.3:80/api/TransportApp/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

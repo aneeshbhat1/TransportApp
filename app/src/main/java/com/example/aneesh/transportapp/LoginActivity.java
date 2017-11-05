@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-    public static final String SERVER_ADDRESS = "http://192.168.1.100:80/api/TransportApp/";
+    public static final String SERVER_ADDRESS = "http://192.168.1.3:80/api/TransportApp/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -356,26 +356,29 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     sb.append(line + "\n");     //Reading and saving line by line - not all at once
                 }
                 line = sb.toString();           //Saving complete data received in string, you can do it differently
-                JSONObject jsonObject = (JSONObject) new JSONTokener(line.substring(line.indexOf("{"), line.lastIndexOf("}") + 1)).nextValue();
-                //JSONObject jsonObject = new JSONObject(line.substring(line.indexOf("{"), line.lastIndexOf("}") + 1));
+                //JSONObject jsonObject = (JSONObject) new JSONTokener(line.substring(line.indexOf("{"), line.lastIndexOf("}") + 1)).nextValue();
+                JSONObject jsonObject = new JSONObject(line);
                 if(jsonObject.length()==0){
                     showErrorMessage();
                     isValidUser = false;
+                    return false;
                 }
                 else{
                     String name = jsonObject.getString("Name");
-                    String username = jsonObject.getString("Username");
-                    String mobileNo = jsonObject.getString("MobileNo");
-                    String licenseno = jsonObject.getString("LicensNo");
+                    String username = jsonObject.getString("UserName");
+                    String mobileNo = jsonObject.getString("MobileNumber");
+                    String licenseno = jsonObject.getString("LicenseNumber");
                     String vehicleType =jsonObject.getString("VehicleType");
                     String referredBy =jsonObject.getString("ReferredBy");
                     User loggedInUser = new User(username,"",licenseno,vehicleType,name,mobileNo,referredBy);
                     userLocalStore.saveUserData(loggedInUser);
                     userLocalStore.setUserLoggedIn(true);
                     isValidUser = true;
+                    return true;
                 }
             } catch (Exception e) {
                 e.printStackTrace();
+                return false;
             } finally {
                 if(reader != null) {
                     try {
@@ -385,7 +388,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     }
                 }
             }
-            return true;
         }
 
         @Override

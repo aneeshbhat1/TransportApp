@@ -32,7 +32,7 @@ public class DALWrapper {
 
     ProgressDialog progressDialog;
     public static final int CONNECTION_TIMEOUT = 1000 * 15;
-    public static final String SERVER_ADDRESS = "http://192.168.1.100:80/api/TransportApp/";
+    public static final String SERVER_ADDRESS = "http://192.168.1.3:80/api/TransportApp/";
     private final Activity activity;
     public DALWrapper(Context context,Activity activity){
         progressDialog = new ProgressDialog(context);
