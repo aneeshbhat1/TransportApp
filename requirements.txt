@@ -1,0 +1,35 @@
+1. Login Screen with Register option
+2. Registration Screen
+	Step1. Personal Details - Mobile(M), Name(M), Sex(M), Password(M), Email(O), Paytm registered number
+	Step2. Vehicle Details - 
+		a. Type Of Reg(M)- Yellow/Private, 
+		b. Type Of Vehicle(M) - Bike/Car/Auto/Bus/TT, 
+		c. Vehicle Category(M)- Hatchback/Sedan,SUV etc
+		d. Registration No(M)
+		e. License(M)
+		f. Message to read terms & conditions
+		g. Sign up button
+	Step3. Payment Screen
+		a. Display the amount to be paid with breakup
+		b. Option to enter referral code(Mobile)
+		b. Payment gateway with paytm option
+		c. Message after successful payment & redirect to invite screen
+	Step4. Invite Friends Screen
+		a. Display Mobile as Referral code
+		b. Relevant message on screen & registration successful message
+		c. Home button
+3. Home Screen with Maps pointing at his location.
+4. Navigation menu with the following options:
+	a. Navigation header 
+		i. Male/ female image
+		ii. Name
+		iii. Number
+	b. Profile
+		i. Show all details entered during registration
+		ii.Edit button - to change 2b,2c,2d
+		iii. Change password with current and new password
+	c. My referrals
+		i. Display the total number
+		ii. Display list of names registered with the referral code
+		iii. 
+5. Change password screen
